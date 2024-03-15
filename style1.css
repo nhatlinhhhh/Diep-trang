@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    position: relative;
+}
+
+.img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: width 1s ease;
+}
+
+img { 
+    width: 400px;
+    height: auto;
+}
+
+.img:hover img {
+    transform: scale(1.1); /* Enlarge the image by 10% on hover */
+}
+
+.text{
+    position: absolute; /* Position the text absolutely */
+    top: 0; /* Align text to the top */
+    right: -200px; /* Position text to the right, initially hidden */
+    padding: 10px; /* Add padding for spacing */
+    transition: right 1s ease; /* Add transition effect */
+    width: 100px;
+}
+
+.nice{
+    background-color: rgba(246, 250, 17);
+    color: rgb(0, 0, 0);
+}
+
+.container:hover .text {
+    right: 40%;
+}

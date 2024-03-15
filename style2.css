@@ -1,0 +1,39 @@
+.container{
+    position: relative;
+}
+
+img { 
+    width: 300px;
+    height: auto;
+}
+
+.img {
+    transition: transform 1s ease; /* Add transition effect */
+}
+
+.img:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.img:hover {
+    content: url(/images/logo2.jpg); /* Change image on hover */
+}
+
+.container {
+    padding: 10px;
+    transition: background-color 1s ease; /* Add transition effect */
+}
+
+.container:hover::before {
+    content: "Université côte d'Azur"; /* Change content on hover */
+}
+
+.container::before {
+    content: "Université de Nice"; /* Initial content */
+}
+
+.container:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
